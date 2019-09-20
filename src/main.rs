@@ -15,7 +15,7 @@ fn main() {
 		name: "Substrate Node",
 		commit: env!("VERGEN_SHA_SHORT"),
 		version: env!("CARGO_PKG_VERSION"),
-		executable_name: "tictactoe",
+		executable_name: "node-template",
 		author: "Anonymous",
 		description: "Template Node",
 		support_url: "support.anonymous.an",
