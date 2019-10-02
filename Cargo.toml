@@ -33,7 +33,7 @@ grandpa = { package = "substrate-finality-grandpa", git = 'https://github.com/pa
 grandpa-primitives = { package = "substrate-finality-grandpa-primitives", git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
 substrate-client = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
 basic-authorship = { package = "substrate-basic-authorship", git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
-node-template-runtime = { path = "runtime" }
+node-template-runtime = { path = "../recipes/kitchen/runtimes/super-node-runtime" }
 
 [build-dependencies]
 vergen = "3.0.4"
