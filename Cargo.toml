@@ -33,7 +33,12 @@ grandpa = { package = "substrate-finality-grandpa", git = 'https://github.com/pa
 grandpa-primitives = { package = "substrate-finality-grandpa-primitives", git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
 substrate-client = { git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
 basic-authorship = { package = "substrate-basic-authorship", git = 'https://github.com/paritytech/substrate.git', branch = 'master' }
-node-template-runtime = { path = "../recipes/kitchen/runtimes/super-node-runtime" }
+
+# This will not currently build unless you have the runtime in the right spot
+# Would be nice to bring this in from git dependency
+# See <insert issue about workspaces here>
+runtime = { package = "super-node-runtime", path = "../recipes/kitchen/runtimes/super-node-runtime" }
+runtime-genesis = { package = "super-node-genesis", path = "../recipes/kitchen/runtimes/super-node-genesis" }
 
 [build-dependencies]
 vergen = "3.0.4"
